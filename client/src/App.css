@@ -1,0 +1,111 @@
+
+
+body {
+  width: 50%;
+  margin: 0 auto;
+  background-image:url("image.jpeg");
+  /* background-size: cover; */
+
+  background-size:cover;
+}
+.head1{
+  color: rgb(241, 238, 241);
+  font-size: 70px;
+  padding-bottom: 60px;
+
+}
+header span{
+  color: #bd4ddf;
+}
+
+header {
+  text-align: center;
+}
+header ro{
+  font: size 100px;
+  color:gray;
+  font-weight:bold;
+}
+header h1 {
+  font-size: 100px;
+  color: #2c3e50;
+  font-weight: 200;
+}
+
+
+input {
+  font-size: 20px;
+  color: #e9ecf0;
+  width: 100%;
+  border: 1px solid #b9c1ca;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.task {
+  background-color: #ad69d4;
+  background-color: transparent;
+  padding: 15px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid plum;
+  margin-bottom: 12px;
+}
+
+.task span {
+  color: #FFFFFF;
+}
+
+.icon {
+  float: right;
+  margin-right: 20px;
+}
+
+article {
+  display: grid;
+}
+footer c1{
+  margin-left: 50px;
+  text-align:  center;
+  font-size: 60px;
+  color: #2c3e50;
+  font-weight: 200;
+}
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #2f2e31;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 30px;
+  margin-top: 35px;
+  margin-left: 50px;
+  margin-bottom: 35px;
+}
+
+.button.selected {
+  color: #FFF;
+  background-color: #29272c;
+}
+
+.button.clear {
+  float: right;
+  color: #FFF;
+  background-color: #ee1630;
+  width: 170px;
+}
