@@ -1,6 +1,6 @@
 # To-Do WebApp
 
-This project is a simple To-do website built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+This project is a To-do website built using the MERN (MongoDB, Express.js, React.js, Node.js) stack.
 
 Deployed Link - 
 
@@ -8,7 +8,7 @@ Deployed Link -
 
 1. Clone the repository:
    ```bash
-    git clone https://github.com/prabhat8701/W3villa.git
+    git clone https://github.com/prabhat8701/w3villatodo.git
 
 2. Install dependencies:
    - ```bash
