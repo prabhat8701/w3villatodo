@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, UPDATE_TODO, DELETE_TODO, TOGGLE_TAB } from './type';
 
-const API_URL = 'https://w3villatodo.vercel.app';
+const API_URL = 'https://w3villatodo.vercel.app/';
 
 export const addNewTodo = (data) => async (dispatch) => {
     try {
@@ -16,7 +16,7 @@ export const addNewTodo = (data) => async (dispatch) => {
 
 export const getAllTodos = () => async (dispatch) => {
     try {
-        const res = await axios.get(`${API_URL}todos`);
+        const res = await axios.get(`${API_URL}/todos`);
 
         dispatch({ type: GETALL_TODO , payload: res.data });
     } catch (error) {
