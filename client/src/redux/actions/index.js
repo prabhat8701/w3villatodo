@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { ADDNEW_TODO, GETALL_TODO, TOGGLE_TODO, UPDATE_TODO, DELETE_TODO, TOGGLE_TAB } from './type';
 
-const API_URL = 'https://w3villatodo.vercel.app';
+const API_URL = 'https://w3villatodo.vercel.app/';
 
 export const addNewTodo = (data) => async (dispatch) => {
     try {
@@ -16,7 +16,7 @@ export const addNewTodo = (data) => async (dispatch) => {
 
 export const getAllTodos = () => async (dispatch) => {
     try {
-        const res = await axios.get(`${API_URL}/todos`);
+        const res = await axios.get(`${API_URL}todos`);
 
         dispatch({ type: GETALL_TODO , payload: res.data });
     } catch (error) {
@@ -26,7 +26,7 @@ export const getAllTodos = () => async (dispatch) => {
 
 export const toggleTodo = (id) => async (dispatch) => {
     try {
-        const res = await axios.get(`${API_URL}/todos/${id}`);
+        const res = await axios.get(`${API_URL}todos/${id}`);
 
         dispatch({ type: TOGGLE_TODO , payload: res.data });
     } catch (error) {
@@ -36,7 +36,7 @@ export const toggleTodo = (id) => async (dispatch) => {
 
 export const updateTodo = (id, data) => async (dispatch) => {
     try {
-        const res = await axios.put(`${API_URL}/todos/${id}`, { data });
+        const res = await axios.put(`${API_URL}todos/${id}`, { data });
 
         dispatch({ type: UPDATE_TODO , payload: res.data });
     } catch (error) {
@@ -46,7 +46,7 @@ export const updateTodo = (id, data) => async (dispatch) => {
 
 export const deleteTodo = (id) => async (dispatch) => {
     try {
-        const res = await axios.delete(`${API_URL}/todos/${id}`);
+        const res = await axios.delete(`${API_URL}todos/${id}`);
 
         dispatch({ type: DELETE_TODO , payload: res.data });
     } catch (error) {
